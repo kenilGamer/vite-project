@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+  img{
+  opacity: 0;
+}
+.app canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+</style>
+  </head>
+  <body>
+    <div class="app w-full h-screen bg-zinc-900 flex text-white">
+      <div class="canvas relative w-1/2 h-screen">
+        <a class="text-2xl opacity-60 font-base fixed top-10 right-10"  href="">Close menu <i class="ri-close-line"></i></a>
+        <div class="images w-[25vw] h-[32vw] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <img class=" absolute w-full h-full object-cover " src="/public/first.jpg" alt="">
+          <img class=" absolute w-full h-full object-cover " src="/public/second.jpg" alt="">
+          <img class=" absolute w-full h-full object-cover " src="/public/third.jpg" alt="">
+          <img class=" absolute w-full h-full object-cover " src="/public/fourth.jpg" alt="">
+        </div>
+      </div>
+      <div class="w-1/2 h-screen flex items-center justify-center">
+        <div class="links flex flex-col gap-10">
+          <a
+            href="#"
+            class="lowercase font-medium transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+          >
+            <small class="text-xl tracking-normal">>0.1</small> Dello spettacolo
+          </a>
+          <a
+            href="#"
+            class="lowercase font-medium transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+          >
+            <small class="text-xl tracking-normal">>0.2</small> Dolco far nienter
+          </a>
+          <a
+            href="#"
+            class="lowercase font-medium transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+          >
+            <small class="text-xl tracking-normal">>0.3</small> Sofosticado
+          </a>
+          <a
+            href="#"
+            class="lowercase font-medium transition-all hover:ml-5 opacity-30 hover:opacity-100 block tracking-tighter text-6xl"
+          >
+            <small class="text-xl tracking-normal">>0.4</small> Magnifico
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
